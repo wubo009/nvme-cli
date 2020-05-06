@@ -159,7 +159,6 @@ static int open_dev(char *dev)
 	}
 	return fd;
 perror:
-	close(fd);
 	perror(dev);
 	return err;
 }
